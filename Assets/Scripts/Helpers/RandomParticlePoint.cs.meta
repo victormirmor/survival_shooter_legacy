@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9e29d72814f12624f9c2a9d1b98d6fcf
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 40756
+  packageName: Survival Shooter Tutorial
+  packageVersion: 2.6
+  assetPath: Assets/_Complete-Game/Scripts/Helpers/RandomParticlePoint.cs
+  uploadId: 283082

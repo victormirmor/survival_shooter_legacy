@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: db7667203062c644ea1877077e30ebd6
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 40756
+  packageName: Survival Shooter Tutorial
+  packageVersion: 2.6
+  assetPath: Assets/_Complete-Game/MobileInput/Scripts/Editor/CrossPlatformInputInitialize.cs
+  uploadId: 283082

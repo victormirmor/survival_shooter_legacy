@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 76a99222b1e4a384e923ac7e86efc709
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 40756
+  packageName: Survival Shooter Tutorial
+  packageVersion: 2.6
+  assetPath: Assets/Scripts/Managers/EnemyManager.cs
+  uploadId: 283082

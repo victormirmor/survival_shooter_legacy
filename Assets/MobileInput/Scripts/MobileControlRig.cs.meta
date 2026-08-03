@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 71398ce7fbc3a5b4fa50b50bd54317a7
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 40756
+  packageName: Survival Shooter Tutorial
+  packageVersion: 2.6
+  assetPath: Assets/_Complete-Game/MobileInput/Scripts/MobileControlRig.cs
+  uploadId: 283082

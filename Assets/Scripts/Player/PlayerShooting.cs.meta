@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 27c63be2a8918c741863160b9d9da122
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 40756
+  packageName: Survival Shooter Tutorial
+  packageVersion: 2.6
+  assetPath: Assets/Scripts/Player/PlayerShooting.cs
+  uploadId: 283082

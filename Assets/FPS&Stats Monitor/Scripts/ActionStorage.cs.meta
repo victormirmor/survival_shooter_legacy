@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 0e5bce4a34710dd459a3f62024ea4fa6
+timeCreated: 1482003714
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 69031
+  packageName: FPS & Stats Monitor - Simple To Advanced System Info
+  packageVersion: 1.0
+  assetPath: Assets/FPS&Stats Monitor/Scripts/ActionStorage.cs
+  uploadId: 152157

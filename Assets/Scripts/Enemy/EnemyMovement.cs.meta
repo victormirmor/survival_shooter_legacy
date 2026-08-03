@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 94f6618a0da65fa45b24d5105d5d8422
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 40756
+  packageName: Survival Shooter Tutorial
+  packageVersion: 2.6
+  assetPath: Assets/Scripts/Enemy/EnemyMovement.cs
+  uploadId: 283082

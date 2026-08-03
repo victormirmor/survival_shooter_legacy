@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9703d53e47195aa4190acd11369ccd1b
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 40756
+  packageName: Survival Shooter Tutorial
+  packageVersion: 2.6
+  assetPath: Assets/_Complete-Game/MobileInput/Scripts/PlatformSpecific/MobileInput.cs
+  uploadId: 283082
