@@ -7,13 +7,6 @@ namespace CompleteProject
         [Header("Configuración del Cargador")]
         public GameObject bulletPrefabToGive; // Asignás Bullet o Bullet_2 Variant
         public int ammoAmount = 20;
-        public float rotationSpeed = 50f;
-
-        private void Update()
-        {
-            // Efecto visual de rotación
-            transform.Rotate(Vector3.up * (rotationSpeed * Time.deltaTime));
-        }
 
         private void OnTriggerEnter(Collider other)
         {

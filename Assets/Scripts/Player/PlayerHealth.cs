@@ -3,7 +3,8 @@ using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-
+namespace CompleteProject{
+    
 public class PlayerHealth : MonoBehaviour
 {
     public int startingHealth = 100;
@@ -17,7 +18,7 @@ public class PlayerHealth : MonoBehaviour
 
     Animator anim;
     AudioSource playerAudio;
-    PlayerMovement playerMovement;
+    PlayerMovement_new PlayerMovement_new;
     //PlayerShooting playerShooting;
     bool isDead;
     bool damaged;
@@ -27,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
     {
         anim = GetComponent <Animator> ();
         playerAudio = GetComponent <AudioSource> ();
-        playerMovement = GetComponent <PlayerMovement> ();
+        PlayerMovement_new = GetComponent <PlayerMovement_new> ();
         //playerShooting = GetComponentInChildren <PlayerShooting> ();
         currentHealth = startingHealth;
     }
@@ -75,7 +76,7 @@ public class PlayerHealth : MonoBehaviour
         playerAudio.clip = deathClip;
         playerAudio.Play ();
 
-        playerMovement.enabled = false;
+        PlayerMovement_new.enabled = false;
         //playerShooting.enabled = false;
     }
 
@@ -84,4 +85,5 @@ public class PlayerHealth : MonoBehaviour
     {
         SceneManager.LoadScene (0);
     }
+}
 }

@@ -22,6 +22,10 @@ public class menu : MonoBehaviour
             Application.Quit();
             #endif
         }
+
+        void awake(){
+        Cursor.visible = false;
+         }
 }
 
 

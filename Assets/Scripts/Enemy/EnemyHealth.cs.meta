@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a9b9d14572410594cb85d40eedfb150c
+guid: aa10cc87aff30c04dbe0aa648f5b6adc
 MonoImporter:
   serializedVersion: 2
   defaultReferences: []
@@ -11,5 +11,5 @@ AssetOrigin:
   productId: 40756
   packageName: Survival Shooter Tutorial
   packageVersion: 2.6
-  assetPath: Assets/Scripts/Enemy/EnemyHealth.cs
+  assetPath: Assets/_Complete-Game/Scripts/Enemy/EnemyHealth.cs
   uploadId: 283082

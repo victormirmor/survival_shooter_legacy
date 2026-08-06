@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 86e378bc199fbd343bceabbd3a16d73e
+guid: b4f43bf66218c874d871d02802b6a2db
 MonoImporter:
   serializedVersion: 2
   defaultReferences: []
@@ -11,5 +11,5 @@ AssetOrigin:
   productId: 40756
   packageName: Survival Shooter Tutorial
   packageVersion: 2.6
-  assetPath: Assets/Scripts/Managers/ScoreManager.cs
+  assetPath: Assets/_Complete-Game/Scripts/Managers/ScoreManager.cs
   uploadId: 283082

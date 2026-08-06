@@ -9792,7 +9792,7 @@ GameObject:
   m_Layer: 9
   m_Name: Hellephant
   m_TagString: Enemy
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9895,9 +9895,9 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.3
   m_Speed: 2.5
-  m_Acceleration: 8
+  m_Acceleration: 4
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 90
   m_StoppingDistance: 1
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -9918,8 +9918,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc28e8f7dbbe7494a8d67b6f5f3636bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenAttacks: 0.5
-  attackDamage: 30
+  timeBetweenAttacks: 1.2
+  attackDamage: 100
+  postAttackMoveDelay: 2.5
 --- !u!114 &11402556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9934,8 +9935,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 160
   currentHealth: 0
-  sinkSpeed: 2.5
-  scoreValue: 10
+  sinkSpeed: 2.2
   deathClip: {fileID: 8300000, guid: 62366b8d2c37a49dca550841c741317f, type: 3}
 --- !u!114 &11487314
 MonoBehaviour:
@@ -9949,6 +9949,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ea9a6ed18654d14db02bf0076cfe488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 2.2
+  targetOffsetRadius: 2.5
+  recalculateInterval: 1.2
+  minTimeBetweenPauses: 3
+  maxTimeBetweenPauses: 6
+  pauseDuration: 3.5
 --- !u!82 &8279214
 AudioSource:
   m_ObjectHideFlags: 0

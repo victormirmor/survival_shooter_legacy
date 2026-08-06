@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 94f6618a0da65fa45b24d5105d5d8422
+guid: 6ea9a6ed18654d14db02bf0076cfe488
 MonoImporter:
   serializedVersion: 2
   defaultReferences: []
@@ -11,5 +11,5 @@ AssetOrigin:
   productId: 40756
   packageName: Survival Shooter Tutorial
   packageVersion: 2.6
-  assetPath: Assets/Scripts/Enemy/EnemyMovement.cs
+  assetPath: Assets/_Complete-Game/Scripts/Enemy/EnemyMovement.cs
   uploadId: 283082

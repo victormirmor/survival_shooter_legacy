@@ -1,24 +1,32 @@
 ﻿using UnityEngine;
 
-public class GameOverManager : MonoBehaviour
+namespace CompleteProject
 {
-    public PlayerHealth playerHealth;
-
-
-    Animator anim;
-
-
-    void Awake()
+    public class GameOverManager : MonoBehaviour
     {
-        anim = GetComponent<Animator>();
-    }
+        public PlayerHealth playerHealth;       // Reference to the player's health.
+        GameObject player;
+
+        Animator anim;                          // Reference to the animator component.
 
 
-    void Update()
-    {
-        if (playerHealth.currentHealth <= 0)
+        void Awake ()
         {
-            anim.SetTrigger("GameOver");
+            // Set up the reference.
+            anim = GetComponent <Animator> ();
+            player = GameObject.FindGameObjectWithTag ("Player");
+            playerHealth = player.GetComponent <PlayerHealth> ();
+        }
+
+
+        void Update ()
+        {
+            // If the player has run out of health...
+            if(playerHealth.currentHealth <= 0)
+            {
+                // ... tell the animator the game is over.
+                anim.SetTrigger ("GameOver");
+            }
         }
     }
 }
