@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0fc1588aa820503387e36a732c83e46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 45
+  speed: 50
   lifeTime: 5
 --- !u!114 &6745801615487645349
 MonoBehaviour:
@@ -179,12 +179,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d02278f3f2ac6914f8e470b20377d6bf,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d02278f3f2ac6914f8e470b20377d6bf,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d02278f3f2ac6914f8e470b20377d6bf,
         type: 3}
@@ -199,7 +199,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d02278f3f2ac6914f8e470b20377d6bf,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d02278f3f2ac6914f8e470b20377d6bf,
         type: 3}

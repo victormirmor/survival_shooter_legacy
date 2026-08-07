@@ -28,6 +28,10 @@ namespace CompleteProject
             enemyHealth = GetComponent<EnemyHealth>();
             enemyMovement = GetComponent<EnemyMovement>();
             anim = GetComponent <Animator> ();
+            if(playerHealth == null)
+            {
+                Debug.Log("no hay jugador");
+            }
         }
 
 

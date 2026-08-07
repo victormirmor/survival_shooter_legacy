@@ -17,7 +17,7 @@ namespace CompleteProject
         private void Update()
         {
             // Traslación constante hacia adelante
-            transform.Translate(Vector3.up * (speed * Time.deltaTime));
+            transform.Translate(Vector3.forward * (speed * Time.deltaTime));
         }
 
         private void OnTriggerEnter(Collider other)

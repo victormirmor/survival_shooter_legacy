@@ -15,35 +15,50 @@ namespace CompleteProject
 
         // Parámetros de Animator
         public const string ANIM_IS_WALKING = "IsWalking";
+
+        // Parámetros del Blend Tree 2D
+        public const string ANIM_SPEED_X = "speedx";
+        public const string ANIM_SPEED_Y = "speedy";
     }
 
-    [RequireComponent(typeof(Rigidbody))]
-    public class PlayerMovement_new : MonoBehaviour
-    {
-           public float speed = 6f;
-
-        private Vector3 movement;
-        private Rigidbody playerRigidbody;
-
-        void Awake ()
+        [RequireComponent(typeof(Rigidbody))]
+        public class PlayerMovement_new : MonoBehaviour
         {
-            playerRigidbody = GetComponent<Rigidbody>();
-        }
+            public float speed = 6f;
 
-        void FixedUpdate ()
-        {
-            float h = CrossPlatformInputManager.GetAxisRaw(InputConstants.AXIS_HORIZONTAL);
-            float v = CrossPlatformInputManager.GetAxisRaw(InputConstants.AXIS_VERTICAL);
+            private Vector3 movement;
+            private Rigidbody playerRigidbody;
 
-            Move(h, v);
-        }
+            void Awake ()
+            {
+                playerRigidbody = GetComponent<Rigidbody>();
+            }
 
-        void Move (float h, float v)
-        {
-            movement.Set(h, 0f, v);
-            movement = movement.normalized * speed * Time.deltaTime;
+            void FixedUpdate ()
+            {
+                float h = CrossPlatformInputManager.GetAxisRaw(InputConstants.AXIS_HORIZONTAL);
+                float v = CrossPlatformInputManager.GetAxisRaw(InputConstants.AXIS_VERTICAL);
 
-            playerRigidbody.MovePosition(transform.position + movement);
-        }
+                Move(h, v);
+            }
+
+            void Move (float h, float v)
+            {
+                    // Obtener las direcciones de la cámara principal
+                    Transform camTransform = Camera.main.transform;
+                    Vector3 forward = camTransform.forward;
+                    Vector3 right = camTransform.right;
+
+                    // Ignorar inclinación vertical de la cámara en el eje Y
+                    forward.y = 0f;
+                    right.y = 0f;
+                    forward.Normalize();
+                    right.Normalize();
+
+                    // Calcular dirección final combinando ejes
+                    Vector3 desiredDirection = (forward * v + right * h).normalized;
+
+                    playerRigidbody.MovePosition(transform.position + desiredDirection * speed * Time.deltaTime);
+                }
+            }
     }
-}

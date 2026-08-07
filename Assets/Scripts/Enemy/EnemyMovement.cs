@@ -125,14 +125,14 @@ namespace CompleteProject
 
             if (anim != null)
             {
-                anim.SetBool("IsDoubting", true);
+                //anim.SetBool("IsDoubting", true);
             }
 
             yield return new WaitForSeconds(pauseDuration);
 
             if (anim != null)
             {
-                anim.SetBool("IsDoubting", false);
+                //anim.SetBool("IsDoubting", false);
             }
 
             isPausing = false;
