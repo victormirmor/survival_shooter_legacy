@@ -372,11 +372,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 621087429}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de3849963d5efb32aad7da0cc0e2c7bb, type: 3}
+  m_Script: {fileID: 11500000, guid: 47a8439089e28aca4b0fd20340753f48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Options: {fileID: 0}
+  MainMenu: {fileID: 0}
 --- !u!1 &650073164
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,15 +709,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 621087434}
-        m_TargetAssemblyTypeName: menu, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_TargetAssemblyTypeName: Main_Menu, Assembly-CSharp
+        m_MethodName: scene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 01
+          m_StringArgument: pruebas
           m_BoolArgument: 0
         m_CallState: 1
 --- !u!114 &736174463

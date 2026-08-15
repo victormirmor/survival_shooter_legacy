@@ -9783,12 +9783,9 @@ GameObject:
   - component: {fileID: 5499234}
   - component: {fileID: 13536644}
   - component: {fileID: 19546556}
-  - component: {fileID: 11415352}
-  - component: {fileID: 11402556}
-  - component: {fileID: 11487314}
   - component: {fileID: 8279214}
-  - component: {fileID: 4582517508855905094}
   - component: {fileID: -3684958287077118296}
+  - component: {fileID: 5409583889493856875}
   m_Layer: 9
   m_Name: Hellephant
   m_TagString: Enemy
@@ -9906,55 +9903,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &11415352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc28e8f7dbbe7494a8d67b6f5f3636bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeBetweenAttacks: 1.2
-  attackDamage: 100
-  postAttackMoveDelay: 2.5
---- !u!114 &11402556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa10cc87aff30c04dbe0aa648f5b6adc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingHealth: 160
-  currentHealth: 0
-  sinkSpeed: 2.2
-  deathClip: {fileID: 8300000, guid: 62366b8d2c37a49dca550841c741317f, type: 3}
---- !u!114 &11487314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ea9a6ed18654d14db02bf0076cfe488, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2.2
-  targetOffsetRadius: 2.5
-  recalculateInterval: 1.2
-  minTimeBetweenPauses: 3
-  maxTimeBetweenPauses: 6
-  pauseDuration: 3.5
 --- !u!82 &8279214
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10052,18 +10000,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &4582517508855905094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f58c1d9ce56e1749830b8aebe8ba3bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!136 &-3684958287077118296
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10087,6 +10023,23 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5409583889493856875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38bf5a428bb30c6f4834ee2136388f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 100
+  currentHealth: 0
+  scoreValue: 10
+  sinkSpeed: 2.5
+  deathClip: {fileID: 0}
 --- !u!1 &1057882346251398331
 GameObject:
   m_ObjectHideFlags: 0
