@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c90631f012085f6bc960a209d2c3cfab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 935109576}
+  playerHealth: {fileID: 0}
   enemies:
   - {fileID: 100000, guid: ea3c2728ef33e3a4d99527a86cda6465, type: 3}
   - {fileID: 100002, guid: e5171f72421770240bd7c3989fe351e3, type: 3}
@@ -10314,18 +10314,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 14871712}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &935109576 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7797127194581587881, guid: 3b0e74d9e113cf626b071e13948b377c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1285513304}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 544f2064df03e95419b4a5147c506b08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &944375074
 GameObject:
   m_ObjectHideFlags: 0
@@ -11263,7 +11251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c69561e2e9d1aebe8cc4748245d4d10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 935109576}
+  playerHealth: {fileID: 0}
 --- !u!114 &1139190144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13905,12 +13893,12 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: -1
+  m_RenderingPath: 1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
