@@ -221,6 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd4083afcb44b071918b0c48d13f35e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   spawnPoints: []
   initialTimeBetweenWaves: 5
   timeBetweenWaves: 4
@@ -231,6 +232,8 @@ MonoBehaviour:
   totalEnemiesInWave: 0
   enemiesSpawnedSoFar: 0
   enemiesAlive: 0
+=======
+>>>>>>> Stashed changes
 --- !u!1 &26338037
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,6 +333,21 @@ Transform:
   - {fileID: 153220189}
   m_Father: {fileID: 539775516}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
+=======
+--- !u!114 &26706555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26706553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4cfc771b17b0efc9c89db98f572590, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+>>>>>>> Stashed changes
 --- !u!1 &54670221
 GameObject:
   m_ObjectHideFlags: 0
@@ -2337,6 +2355,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 332048119}
   m_CullTransparentMesh: 1
+<<<<<<< Updated upstream
+=======
+--- !u!114 &332048123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332048119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3abf4a8f127ce43899ab41530ac44d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+>>>>>>> Stashed changes
 --- !u!1 &345275348
 GameObject:
   m_ObjectHideFlags: 0
@@ -13648,7 +13681,6 @@ GameObject:
   - component: {fileID: 1851598978}
   - component: {fileID: 1851598985}
   - component: {fileID: 1851598984}
-  - component: {fileID: 1851598987}
   m_Layer: 12
   m_Name: M.Camera
   m_TagString: MainCamera
@@ -13815,6 +13847,7 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+<<<<<<< Updated upstream
 --- !u!114 &1851598987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13832,6 +13865,8 @@ MonoBehaviour:
   RotX: 20
   RotY: 0
   Tag_Seguir: Player
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1859424391
 GameObject:
   m_ObjectHideFlags: 0
@@ -14499,7 +14534,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1979757894
 RectTransform:
   m_ObjectHideFlags: 0
