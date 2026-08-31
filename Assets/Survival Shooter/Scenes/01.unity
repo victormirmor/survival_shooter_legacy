@@ -216,7 +216,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 14871708}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c90631f012085f6bc960a209d2c3cfab, type: 3}
   m_Name: 
@@ -355,7 +355,7 @@ MonoBehaviour:
   ColectablesPrefabs:
   - {fileID: 5717222655960768189, guid: 663f3208d5da440a293bdb8445f42d53, type: 3}
   - {fileID: 3935957816190142760, guid: 8a7289aba257e77bfa4e058174c654f8, type: 3}
-  - {fileID: 3935957816190142760, guid: 994f5b8fb2458fd01b9bf481473e81ac, type: 3}
+  - {fileID: 5717222655960768189, guid: 994f5b8fb2458fd01b9bf481473e81ac, type: 3}
   - {fileID: 6733838689323153886, guid: 62912ebbdeabd1173ae5051553c8858f, type: 3}
   - {fileID: 3935957816190142760, guid: 8a7289aba257e77bfa4e058174c654f8, type: 3}
   - {fileID: 583759270755030760, guid: fbd4bedafe18c88fcbee1c61244c379b, type: 3}
@@ -7398,8 +7398,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 1
-  m_Color: {r: 0.62438, g: 0.55602527, b: 0.990566, a: 1}
-  m_Intensity: 0.6
+  m_Color: {r: 0.990566, g: 0.5252051, b: 0.3224012, a: 1}
+  m_Intensity: 1.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -7433,7 +7433,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -8717,6 +8717,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 692873477}
   m_CullTransparentMesh: 0
+--- !u!1 &713337348
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 713337349}
+  m_Layer: 0
+  m_Name: gamemanager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &713337349
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713337348}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &715442824
 GameObject:
   m_ObjectHideFlags: 0
@@ -9003,7 +9034,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Survival Shooter MOD Beta 0.87
+  m_Text: Survival Shooter MOD Beta 0.88
 --- !u!222 &760828699
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10531,7 +10562,6 @@ GameObject:
   - component: {fileID: 946449136}
   - component: {fileID: 946449139}
   - component: {fileID: 946449138}
-  - component: {fileID: 946449137}
   m_Layer: 5
   m_Name: Counter_Text
   m_TagString: Untagged
@@ -10558,18 +10588,6 @@ RectTransform:
   m_AnchoredPosition: {x: 120, y: 0}
   m_SizeDelta: {x: 130, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &946449137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 946449135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4f43bf66218c874d871d02802b6a2db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &946449138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10845,7 +10863,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 997885346}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -12268,8 +12286,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1434159494}
   - component: {fileID: 1434159496}
-  - component: {fileID: 1434159495}
   - component: {fileID: 1434159497}
+  - component: {fileID: 1434159495}
   m_Layer: 5
   m_Name: ScoreText
   m_TagString: Untagged
@@ -12347,9 +12365,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1434159493}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4f43bf66218c874d871d02802b6a2db, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c00aef2cd401bfe8bf62ac5af6bb4a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 1434159495}
+  highScoreText: {fileID: 946449138}
 --- !u!1 &1434239552
 GameObject:
   m_ObjectHideFlags: 0
@@ -13180,11 +13200,6 @@ PrefabInstance:
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 1837071937}
-    - target: {fileID: 835701219157100217, guid: 4e5a0d387dc27394b81600988ad0216f,
-        type: 3}
-      propertyPath: startingHealth
-      value: 850
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15283,3 +15298,4 @@ SceneRoots:
   - {fileID: 539775516}
   - {fileID: 1641232233}
   - {fileID: 109304994}
+  - {fileID: 713337349}
