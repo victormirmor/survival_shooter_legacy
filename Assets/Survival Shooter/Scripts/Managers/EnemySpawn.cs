@@ -11,9 +11,9 @@ namespace CompleteProject
         public GameObject[] enemies;           // Prefabs de enemigos
         public Transform[] spawnPoints;         // Puntos de aparición en el mapa
 
-        [Header("Tiempos de Spawn")][Range(1f, 15f)]
-        public float initialTimeBetweenWaves = 10f;
-        [Range(1f, 15f)] public float timeBetweenWaves = 4f,spawnDelay = 1.5f;     // Tiempo de descanso entre oleadas subsecuentes (2, 3, 4...)
+        [Header("Tiempos de Spawn")]
+        [Range(1f, 15f)] public float initialTimeBetweenWaves = 10f;
+        [Range(1f, 15f)] public float timeBetweenWaves = 4f, spawnDelay = 1.5f; // Tiempo de descanso entre oleadas subsecuentes (2, 3, 4...)
 
         [Header("Configuración de Oleadas")]
         [Range(1, 50)]
@@ -29,6 +29,20 @@ namespace CompleteProject
         public int enemiesAlive;
 
         private bool isSpawningWave = false;
+        private BulletSpawner ammoSpawner;
+        private WaveUI waveUI;
+
+        void Awake()
+        {
+            // Búsqueda de referencias en Awake usando la API moderna
+            if (playerHealth == null)
+            {
+                playerHealth = FindFirstObjectByType<PlayerHealth>();
+            }
+
+            ammoSpawner = FindFirstObjectByType<BulletSpawner>();
+            waveUI = FindFirstObjectByType<WaveUI>(FindObjectsInactive.Include);
+        }
 
         void Start()
         {
@@ -53,14 +67,12 @@ namespace CompleteProject
             isSpawningWave = true;
 
             // 1. Spawnea la munición inicial en el mapa
-            BulletSpawner ammoSpawner = FindObjectOfType<BulletSpawner>();
             if (ammoSpawner != null)
             {
                 ammoSpawner.SpawnWaveAmmo();
             }
 
             // 2. Notifica a la UI usando la variable independiente 'initialTimeBetweenWaves'
-            WaveUI waveUI = FindObjectOfType<WaveUI>(true);
             float remainingTime = initialTimeBetweenWaves;
 
             while (remainingTime > 0)
@@ -91,7 +103,6 @@ namespace CompleteProject
             Debug.Log($"<color=cyan><b>--- INICIANDO OLEADA {currentWave} ---</b></color> Total enemigos: {totalEnemiesInWave}");
 
             // --- AVISO A LA UI DE OLEADAS ---
-            WaveUI waveUI = FindObjectOfType<WaveUI>(true);
             if (waveUI != null)
             {
                 waveUI.ShowWave(currentWave);
@@ -100,7 +111,6 @@ namespace CompleteProject
             // Spawnea munición adicional si es de la oleada 2 en adelante
             if (currentWave > 1)
             {
-                BulletSpawner ammoSpawner = FindObjectOfType<BulletSpawner>();
                 if (ammoSpawner != null)
                 {
                     ammoSpawner.SpawnWaveAmmo();

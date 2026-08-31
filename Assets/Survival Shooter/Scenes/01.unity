@@ -216,7 +216,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 14871708}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c90631f012085f6bc960a209d2c3cfab, type: 3}
   m_Name: 
@@ -234,7 +234,7 @@ MonoBehaviour:
   initialTimeBetweenWaves: 10
   timeBetweenWaves: 15
   spawnDelay: 1.5
-  initialWaveEnemies: 10
+  initialWaveEnemies: 7
   enemiesPerWaveIncrease: 2
   currentWave: 0
   totalEnemiesInWave: 0
@@ -9150,6 +9150,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 1
+      - m_Target: {fileID: 1614684810}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 1
 --- !u!114 &760874238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13048,6 +13060,18 @@ Transform:
   - {fileID: 768239536}
   m_Father: {fileID: 539775516}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1614684810 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8377901680848766281, guid: 4e5a0d387dc27394b81600988ad0216f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1641232233}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec4508afad886ca75b56ffb198f78337, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1637865050
 GameObject:
   m_ObjectHideFlags: 0
@@ -13202,8 +13226,8 @@ PrefabInstance:
       objectReference: {fileID: 1837071937}
     - target: {fileID: 8377901680848766281, guid: 4e5a0d387dc27394b81600988ad0216f,
         type: 3}
-      propertyPath: Bullets_rest
-      value: 30
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13785,9 +13809,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
+  m_MaxValue: 50
   m_WholeNumbers: 0
-  m_Value: 100
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

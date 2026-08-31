@@ -29,7 +29,7 @@ namespace CompleteProject
 
         private void Start()
         {
-            spawner = FindObjectOfType<EnemySpawn>();
+            spawner = FindFirstObjectByType<EnemySpawn>();
         }
 
         public void ShowWave(int waveNumber)

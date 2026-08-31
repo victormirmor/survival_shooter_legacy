@@ -40,7 +40,8 @@ namespace CompleteProject
                     // Notificamos a la UI de Headshot si aplica
                     if (IsHeadshot)
                     {
-                        HeadshotUI headshotUI = FindObjectOfType<HeadshotUI>(true);
+                        //HeadshotUI headshotUI = FindObjectOfType<HeadshotUI>(true);
+                        HeadshotUI headshotUI = FindFirstObjectByType<HeadshotUI>(FindObjectsInactive.Include);
                         if (headshotUI != null)
                         {
                             headshotUI.TriggerHeadshot(FinalDamage);

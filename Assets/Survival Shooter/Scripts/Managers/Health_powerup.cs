@@ -18,7 +18,7 @@ namespace CompleteProject
         }
 
         void OnTriggerEnter (Collider other){
-            if(other.gameObject == player){
+            if(other.gameObject == player && playerHealth.totalLive==false){
                 if(isCoin==false){
 
                 playerHealth.currentHealth += live;

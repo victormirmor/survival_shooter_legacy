@@ -13,7 +13,7 @@ namespace CompleteProject
         Rigidbody playerRigidbody;          // Referencia al Rigidbody del jugador.
         private Quaternion targetRotation;
 
-        private bool shouldRotate = false;  // Flag para capturar la pulsación de Fire2 de forma segura.
+        //private bool shouldRotate = false;  // Flag para capturar la pulsación de Fire2 de forma segura.
 
         void Awake ()
         {

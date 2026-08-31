@@ -14,10 +14,10 @@ namespace CompleteProject{
         }
 
         void Update (){
-            animation();
+            PlayAnim();
         }
 
-        void animation(){
+        void PlayAnim(){
             // Leer ejes de movimiento
             float h = CrossPlatformInputManager.GetAxisRaw(InputConstants.AXIS_HORIZONTAL);
             float v = CrossPlatformInputManager.GetAxisRaw(InputConstants.AXIS_VERTICAL);

@@ -82,7 +82,7 @@ namespace CompleteProject
             // Change the audio clip of the audio source to the death clip and play it (this will stop the hurt clip playing).
             enemyAudio.clip = deathClip;
             enemyAudio.Play ();
-            EnemySpawn enemyManager = FindObjectOfType<EnemySpawn>();
+            EnemySpawn enemyManager = FindFirstObjectByType<EnemySpawn>();
     if (enemyManager != null)
     {
         enemyManager.OnEnemyDied();

@@ -19,9 +19,9 @@ public class PlayerHealth : MonoBehaviour
     Animator anim;
     AudioSource playerAudio;
     PlayerMovement_new PlayerMovement_new;
-    //PlayerShooting playerShooting;
     bool isDead;
     bool damaged;
+    public bool totalLive=true;
 
 
     void Awake ()
@@ -29,8 +29,10 @@ public class PlayerHealth : MonoBehaviour
         anim = GetComponent <Animator> ();
         playerAudio = GetComponent <AudioSource> ();
         PlayerMovement_new = GetComponent <PlayerMovement_new> ();
-        //playerShooting = GetComponentInChildren <PlayerShooting> ();
         currentHealth = startingHealth;
+        totalLive=true;
+        healthSlider.maxValue = currentHealth;
+        healthSlider.value = currentHealth;
     }
 
 
@@ -40,11 +42,18 @@ public class PlayerHealth : MonoBehaviour
         {
             damageImage.color = flashColour;
         }
+        if(currentHealth!=startingHealth)
+        {
+            totalLive=false;
+        }
+
         else
         {
             damageImage.color = Color.Lerp (damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
         }
         damaged = false;
+
+        healthSlider.value = currentHealth;
     }
 
 

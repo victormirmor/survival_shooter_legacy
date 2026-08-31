@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ZombunnyMaterial
-  m_Shader: {fileID: 10703, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 128c5f1edaefa4c4fb3f9f7a4615edb2, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -122,3 +122,4 @@ Material:
     - _SpecColor: {r: 0.283737, g: 0.2845931, b: 0.30147058, a: 1}
     - _SpecularColor: {r: 0.22794116, g: 0.22794116, b: 0.22794116, a: 1}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1

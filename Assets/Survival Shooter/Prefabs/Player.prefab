@@ -5194,7 +5194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec4508afad886ca75b56ffb198f78337, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bullets_rest: 10
+  Bullets_rest: 30
   timeBetweenBullets: 0.2
   bulletPrefab: {fileID: 6733838689323153886, guid: 62912ebbdeabd1173ae5051553c8858f,
     type: 3}
