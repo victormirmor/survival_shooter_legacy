@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnitySampleAssets.CrossPlatformInput;
+using MiJuego.InputAdaptador;
 
 namespace CompleteProject
 {
@@ -21,13 +21,13 @@ namespace CompleteProject
         void Update()
         {
             // RB: Girar a la derecha
-            if (CrossPlatformInputManager.GetButtonDown(InputConstants.BUTTON_ROTATE_RIGHT))
+            if (CrossPlatformInputManager.GetButtonDown("Right"))
             {
                 targetRotation *= Quaternion.Euler(0f, turnAngle, 0f);
             }
 
             // LB: Girar a la izquierda
-            if (CrossPlatformInputManager.GetButtonDown(InputConstants.BUTTON_ROTATE_LEFT))
+            if (CrossPlatformInputManager.GetButtonDown("Left"))
             {
                 targetRotation *= Quaternion.Euler(0f, -turnAngle, 0f);
             }

@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems; // Required for UI check
-using UnitySampleAssets.CrossPlatformInput;
+using MiJuego.InputAdaptador;
 
 
 namespace CompleteProject{
@@ -33,7 +33,7 @@ namespace CompleteProject{
 
             timer += Time.deltaTime;
 
-            if (Input.GetButton ("Fire1") && timer >= timeBetweenBullets && Time.timeScale != 0 && Bullets_rest > 0)
+            if (CrossPlatformInputManager.GetButtonDown ("Fire1") && timer >= timeBetweenBullets && Time.timeScale != 0 && Bullets_rest > 0)
             {
                 Shoot ();
                 Bullets_rest--;

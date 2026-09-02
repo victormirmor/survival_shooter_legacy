@@ -1,5 +1,6 @@
 using UnityEngine;
-using UnitySampleAssets.CrossPlatformInput;
+using MiJuego.InputAdaptador;
+
 
 namespace CompleteProject{
     
@@ -7,24 +8,17 @@ namespace CompleteProject{
     public class PlayerAnimation : MonoBehaviour
     {
         private Animator anim;
+        const string IS_WALKING = "IsWalking";
 
-        void Awake ()
-        {
+        void Awake (){
             anim = GetComponent<Animator>();
         }
 
-        void Update (){
-            PlayAnim();
-        }
-
-        void PlayAnim(){
-            // Leer ejes de movimiento
-            float h = CrossPlatformInputManager.GetAxisRaw(InputConstants.AXIS_HORIZONTAL);
-            float v = CrossPlatformInputManager.GetAxisRaw(InputConstants.AXIS_VERTICAL);
+       public void PlayAnim(float H, float V){
 
             // Evaluar si el personaje camina y actualizar el Animator
-            bool walking = h != 0f || v != 0f;
-            anim.SetBool(InputConstants.ANIM_IS_WALKING, walking);
+            bool walking = H != 0f || V != 0f;
+            anim.SetBool(IS_WALKING, walking);
         }
     }
 }

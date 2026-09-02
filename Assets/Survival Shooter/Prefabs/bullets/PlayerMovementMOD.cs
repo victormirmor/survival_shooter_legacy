@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using UnitySampleAssets.CrossPlatformInput;
+using MiJuego.InputAdaptador;
 
 namespace CompleteProject
 {
@@ -36,8 +36,8 @@ namespace CompleteProject
         void FixedUpdate ()
         {
             // Guardar ejes de entrada (Analógico / D-Pad / Teclado).
-            float h = CrossPlatformInputManager.GetAxisRaw("Horizontal");
-            float v = CrossPlatformInputManager.GetAxisRaw("Vertical");
+            float h = CrossPlatformInputManager.GetAxis("Horizontal");
+            float v = CrossPlatformInputManager.GetAxis("Vertical");
 
             // Mover al personaje.
             Move (h, v);

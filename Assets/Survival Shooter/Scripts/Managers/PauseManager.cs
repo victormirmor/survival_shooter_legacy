@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.EventSystems;
+using MiJuego.InputAdaptador;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -33,7 +34,7 @@ namespace CompleteProject
         private void Update()
         {
             // Captura "Cancel" (ESC / Gamepad Start) en lugar de hardcodear la tecla
-            if (Input.GetButtonDown("Cancel"))
+            if (CrossPlatformInputManager.GetButtonDown ("Cancel"))
             {
                 TogglePause();
             }

@@ -5274,10 +5274,10 @@ GameObject:
   - component: {fileID: 5400000}
   - component: {fileID: 13600000}
   - component: {fileID: 8200002}
-  - component: {fileID: 4924475192051278311}
   - component: {fileID: 2365348776707490757}
   - component: {fileID: 6568448296816356854}
   - component: {fileID: 835701219157100217}
+  - component: {fileID: 480747320371491289}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -5473,19 +5473,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &4924475192051278311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd3b80d4b5d90931298963cea40ecf00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 6
 --- !u!114 &2365348776707490757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5530,8 +5517,21 @@ MonoBehaviour:
   damageImage: {fileID: 0}
   deathClip: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
   flashSpeed: 5
-  flashColour: {r: 1, g: 0, b: 0, a: 0.1}
+  flashColour: {r: 1, g: 0.4575472, b: 0.4575472, a: 0.019607844}
   totalLive: 1
+--- !u!114 &480747320371491289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c553ab25d4db62024be69f0d2bae6266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 6
 --- !u!1 &100008
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,25 +1,23 @@
 using UnityEngine;
-using UnitySampleAssets.CrossPlatformInput;
+using MiJuego.InputAdaptador;
 
 namespace CompleteProject
 {
-    public static class InputConstants
-    {
-        // Ejes de Movimiento
-        public const string AXIS_HORIZONTAL = "Horizontal";
-        public const string   AXIS_VERTICAL = "Vertical";
+    public static class InputConstants{
 
         // Botones de Acción / Rotación
         public const string BUTTON_ROTATE_RIGHT = "Rotate1"; // RB / Gatillo Derecho
-        public const string  BUTTON_ROTATE_LEFT = "Rotate2";  // LB / Gatillo Izquierdo
-
-        // Parámetros de Animator
-        public const string ANIM_IS_WALKING = "IsWalking";
+        public const string  BUTTON_ROTATE_LEFT = "Rotate2";  // LB / Gatillo Izquierdo;
     }
 
     [RequireComponent(typeof(Rigidbody))]
-    public class PlayerMovement_new : MonoBehaviour
-    {
+    public class PlayerMovement : MonoBehaviour{
+
+        public const string HORIZONTAL = "Horizontal";
+        public const string VERTICAL = "Vertical";
+
+        PlayerAnimation playerAnimation;
+
            public float speed = 6f;
 
         private Vector3 movement;
@@ -28,14 +26,16 @@ namespace CompleteProject
         void Awake ()
         {
             playerRigidbody = GetComponent<Rigidbody>();
+            playerAnimation = GetComponent<PlayerAnimation>();
         }
 
         void FixedUpdate ()
         {
-            float h = CrossPlatformInputManager.GetAxisRaw(InputConstants.AXIS_HORIZONTAL);
-            float v = CrossPlatformInputManager.GetAxisRaw(InputConstants.AXIS_VERTICAL);
+            float h = CrossPlatformInputManager.GetAxis(HORIZONTAL);
+            float v = CrossPlatformInputManager.GetAxis(VERTICAL);
 
             Move(h, v);
+            playerAnimation.PlayAnim(h,v);
         }
 
         void Move (float h, float v)

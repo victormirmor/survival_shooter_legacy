@@ -18,7 +18,7 @@ public class PlayerHealth : MonoBehaviour
 
     Animator anim;
     AudioSource playerAudio;
-    PlayerMovement_new PlayerMovement_new;
+    PlayerMovement PlayerMovement;
     bool isDead;
     bool damaged;
     public bool totalLive=true;
@@ -28,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
     {
         anim = GetComponent <Animator> ();
         playerAudio = GetComponent <AudioSource> ();
-        PlayerMovement_new = GetComponent <PlayerMovement_new> ();
+        PlayerMovement = GetComponent <PlayerMovement> ();
         currentHealth = startingHealth;
         totalLive=true;
         healthSlider.maxValue = currentHealth;
@@ -85,7 +85,7 @@ public class PlayerHealth : MonoBehaviour
         playerAudio.clip = deathClip;
         playerAudio.Play ();
 
-        PlayerMovement_new.enabled = false;
+        PlayerMovement.enabled = false;
         //playerShooting.enabled = false;
     }
 
