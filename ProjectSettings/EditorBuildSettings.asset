@@ -5,11 +5,14 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Survival Shooter/Scenes/MainMenu.unity
     guid: 1fefd15091700797782047b1b89b2360
-  - enabled: 1
+  - enabled: 0
     path: Assets/Survival Shooter/Scenes/01.unity
     guid: 3f0c8165ed69f0a4ca11b68b2c08346b
+  - enabled: 1
+    path: Assets/CustomPerformanceMonitor/Demo/Demo.unity
+    guid: 95e5baee6fcf6cde0ad46ac307bc85da
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

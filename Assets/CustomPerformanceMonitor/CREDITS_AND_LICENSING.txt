@@ -1,0 +1,28 @@
+================================================================================
+                    PACKAGE CREDITS & ASSET DOCUMENTATION
+================================================================================
+
+1. CHARACTER ASSET OVERVIEW
+--------------------------------------------------------------------------------
+- Character Mesh: 3D Animated Character Model.
+- Topology: Optimized Low-Poly Mesh (~10k vertices / triangles).
+- Materials & Shaders: Unlit / Mobile-Friendly Textures.
+- Setup: Rigged and integrated with Unity's CharacterController pipeline.
+
+2. CREATIVE WORKFLOW & AI ASSISTANCE DECLARATION
+--------------------------------------------------------------------------------
+- Concept & Original Design: Created and owned by the Author.
+- Base Geometry Generation: Generated using Tripo AI (Pro License) based on 
+  custom orthographic 2D reference artwork (T-Pose, flat lighting).
+- Post-Processing & Optimization: Manual topology cleanup, UV mapping, 
+  rigging adjustments, and Unity integration performed by the Author.
+
+3. COMMERCIAL RIGHTS & LEGAL COMPLIANCE
+--------------------------------------------------------------------------------
+- All commercial rights for the input reference images are owned by the Author.
+- Generation was performed under a paid Tripo AI Pro Subscription, granting full 
+  commercial exploitation rights for the resulting 3D mesh and textures.
+- This asset fully complies with Unity Asset Store guidelines regarding 
+  AI-assisted content and original intellectual property.
+
+================================================================================
